@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rect"
+    android:orientation="vertical"
+    android:weightSum="3"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight=".8"
+    android:padding="20dp"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/blue"
+        android:hint="Who is this investment for?*"
+        android:id="@+id/et1"
+        >
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:clickable="true"
+        android:paddingTop="30dp"
+        android:layout_below="@+id/et1"
+        android:text="Is the equity on time or recurring"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:paddingTop="20dp"
+        android:paddingRight="5dp"
+        android:layout_below="@+id/tv1"
+        android:text="Fixed"
+        android:layout_alignParentBottom="true"
+        ></TextView>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/sc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_below="@id/tv1"
+        android:layout_toRightOf="@id/tv2"
+        android:checked="false"
+        android:gravity="right"
+        android:thumb="@drawable/thumb_selector"
+        android:layout_alignParentBottom="true"
+        app:track="@drawable/track_selector" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv3"
+        android:paddingLeft="5dp"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/tv1"
+        android:layout_toRightOf="@id/sc"
+        android:text="Variable"
+        android:layout_alignParentBottom="true"
+        ></TextView>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:padding="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/et2"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue"
+                android:hint="Date of purchase"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/et2"
+                android:id="@+id/et3"
+                android:layout_weight="1"
+                android:inputType="date"
+                android:backgroundTint="@color/blue"
+                android:hint="Number of units"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/et3"
+                android:hint="Purchase price"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue"
+                android:id="@+id/et4"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight=".8">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple"
+            android:id="@+id/button"
+            android:padding="20dp"
+            android:text="Add more"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.07999998" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_home">Goals</string>
+    <string name="title_info">Info</string>
+    <string name="title_you">Know you better</string>
+    <string name="title_family">Your family</string>
+    <string name="title_risk">Know you risk</string>
+    <string name="title_notifications">notifications</string>
+    <string name="title_dashboard">dashboard</string>
+
+    <string name="title_self">Self</string>
+    <string name="title_wife">Wife</string>
+    <string name="family">Family</string>
+
+
+</resources>

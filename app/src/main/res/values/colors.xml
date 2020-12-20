@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary"> #a6a6a6</color>
+    <color name="colorPrimaryDark"> #a6a6a6</color>
+    <color name="colorAccent"> #a6a6a6</color>
+    <color name="floatingactionbutton">#ace600</color>
+    <color name="tab_button">#ffad99</color>
+    <color name="tab_button_selected">#ff8566</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#0044cc</color>
+    <color name="black">#000000</color>
+</resources>
